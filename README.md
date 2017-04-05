@@ -16,7 +16,7 @@ su -
 ```
 
 ```sh
-git clone https://github.com/chih7/spark_install.git
+git clone https://github.com/chih7/spark-install.git
 ```
 
 ```sh
@@ -50,7 +50,7 @@ su -
 ```
 
 ```sh
-./start-spark.sh
+/usr/local/spark/sbin/start-all.sh
 ```
 
 Done
