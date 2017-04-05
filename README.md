@@ -50,6 +50,10 @@ su -
 ```
 
 ```sh
+vim  /usr/local/spark/conf/spark-env.sh # change  SPARK_LOCAL_IP=spark-xxxx
+```
+
+```sh
 /usr/local/spark/sbin/start-all.sh
 ```
 

@@ -67,7 +67,9 @@ export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
     cp -r ./spark_config/* /tmp/
     
     mv /tmp/slaves /usr/local/spark/conf
-    
+    cp /usr/local/spark/conf/spark-env.sh.template /usr/local/spark/conf/spark-env.sh
+    echo "SPARK_MASTER_HOST=spark-master" >> /usr/local/spark/conf/spark-env.sh
+    echo "SPARK_LOCAL_IP=spark-xxxx" >> /usr/local/spark/conf/spark-env.sh
 }
 
 pre_install
